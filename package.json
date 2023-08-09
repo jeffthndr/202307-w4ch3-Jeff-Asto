@@ -12,7 +12,8 @@
     "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
     "test:w": "jest --watchAll --coverage --collectCoverageFrom=src/todo/**/*.{ts,tsx}",
     "test:fast": "jest --watchAll --coverage",
-    "start": "json-server --watch db.json"
+    "start": "json-server --watch db.json",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -41,7 +42,8 @@
     "sass": "^1.64.2",
     "ts-jest": "^29.1.1",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "husky": "^8.0.0"
   },
   "prettier": {
     "singleQuote": true
